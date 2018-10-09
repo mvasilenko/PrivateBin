@@ -16,8 +16,8 @@ RUN apt-get update && apt-get install -y \
 COPY . /var/www/html
 
 # Copy start script
-RUN mv /var/www/html/docker/entrypoint.sh / && \
-    rm -r /var/www/html/docker
+RUN mv /var/www/html/contrib/docker/entrypoint.sh / && \
+    rm -r /var/www/html/contrib
 
 VOLUME /var/www/html/data
 
